@@ -48,6 +48,11 @@ var url = "mongodb://localhost:27017/";
 
 
 
+//demo api
+app.get('/', (req, res) => res.send('Hello World!'))
+
+
+
 //API to fetch user details
 app.get('/getUsers', function (req, res) {
 
