@@ -19,26 +19,36 @@ Steps to set up and run the application:
 4. Run the command : node user_data_fetch.js 
    This script will do the following tasks:
    i. Fetch user data.
+   
    ii. Create master database in mongoDb
+   
    iii. Create users collection under the master database.
+   
    iv. Store all the user records in the users collection as documents.
+   
    v. Create a separate database for each user distinguished user user id with posts collection under each database.
 
 5. Run the command : node post_data_fetch.js
    This script will do the following tasks:
    i. Fetch posts data.
+   
    ii. Fetch comments data
+   
    iii. Map comments to respective posts.
+   
    iv. Store the posts data under posts collection of respective user database created in step 4.
 
 6. Run the command : node app.js
    This command will run the Node js server and make all the REST APIs accessible. It will run on http://localhost:3000/
    In the browser you can go to http://localhost:3000/ to verify. The application is running it it shows Hello World!
    
+   
 7. Import the postman collection :test_requests_hope_research.postman_collection.json under the directory : /mongo_node_express_hope/postman_requests/ in postman
 
 
 8. From the postman collection you will get sample requests to all REST APIs.
+
+
 
 
 
